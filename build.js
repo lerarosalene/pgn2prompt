@@ -1,7 +1,7 @@
 const p = require("node:path");
 const fs = require("node:fs");
 const esbuild = require("esbuild");
-const {minify} = require("html-minifier-terser");
+const { minify } = require("html-minifier-terser");
 const sass = require("sass");
 
 const fsp = fs.promises;

@@ -37,7 +37,9 @@ function formatLastMoveState(pgn: string, listLegalMoves: boolean): string {
     return prompt;
   }
 
-  return `${prompt}\n\nYour ONLY legal moves are: ${chess.moves().join(", ")}. Choose one of them.`;
+  return `${prompt}\n\nYour ONLY legal moves are: ${chess
+    .moves()
+    .join(", ")}. Choose one of them.`;
 }
 
 function getBoardState(chess: Chess): BoardState {

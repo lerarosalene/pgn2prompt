@@ -23,8 +23,10 @@ if [ -f "${DIST_NAME}" ]; then
 fi
 
 pushd dist
-  zip -r9 "../${DIST_NAME}" .
+  zip -r0 "../${DIST_NAME}" .
 popd
+
+ls -alh "${DIST_NAME}"
 
 curl \
   -H"Content-Type: application/zip" \

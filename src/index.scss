@@ -49,6 +49,14 @@ body {
   }
 }
 
+.attribution {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  grid-column: 2;
+  grid-row: 3;
+}
+
 textarea {
   font-size: 18px;
 }
@@ -66,7 +74,7 @@ textarea {
   font-family: monospace;
   white-space: pre-wrap;
   grid-column: 2;
-  grid-row: 2 / span 2;
+  grid-row: 2;
   resize: none;
 }
 

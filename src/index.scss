@@ -1,0 +1,72 @@
+:root {
+  color-scheme: only light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: only dark;
+  }
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  padding: 20px;
+  box-sizing: border-box;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 1rem;
+}
+
+.header {
+  margin: 0;
+  grid-column: 1 / span 2;
+  font-size: 26px;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  grid-column: 1;
+  grid-row: 3;
+
+  label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+textarea {
+  font-size: 18px;
+}
+
+.pgn {
+  padding: 10px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  resize: none;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#output {
+  font-family: monospace;
+  white-space: pre-wrap;
+  grid-column: 2;
+  grid-row: 2 / span 2;
+  resize: none;
+}
+
